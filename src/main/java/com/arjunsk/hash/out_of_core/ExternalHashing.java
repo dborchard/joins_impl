@@ -21,6 +21,10 @@ public class ExternalHashing {
         List<Path> buckets = createBuckets();
         distributeRecords(inputFilePath, buckets);
 
+        // NOTE: if the partition size is more than the given bucket size, due to freq duplicates
+        // (eg, gender has only Male/Female) the we use recursive partitioning approach
+        // here: https://www.youtube.com/watch?v=Qsk5Ql7_sUY&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=7
+
         // 2. Rehashing to individual key based buckets.
         rehashBuckets(buckets);
 

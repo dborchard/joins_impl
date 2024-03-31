@@ -12,8 +12,11 @@ Three fundamental algorithms for performing a binary join operation exist:
 - sort-merge join
     - [Double Buffering](https://www.youtube.com/watch?v=qdeBmEnv_bI&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=2)
     - [External Merge Sort](https://www.youtube.com/watch?v=hRgrnQU-uJ4&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=4)
-- symmetric hash join (streaming)
-
+- symmetric hash join (streaming) [DONE]
+  - Join Schema which [doesn't have Pipeline Breakers](https://www.youtube.com/watch?v=jveohy_qhHU&list=PLzzVuDSjP25QY8TJcPLh7WqP81qYk9A0m&index=9)
+  - Send output as soon as you get input rather than waiting for the whole join to end.
+  - There is a Out-of-core Symmetric Hash Join (X-Join Paper). Not used in practical systems.
+  
 ### Core Ideas
 
 - [Double Buffering](https://www.youtube.com/watch?v=qdeBmEnv_bI&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=2): [CoW Btree Page 50](https://schd.ws/hosted_files/buildstuff14/96/20141120-BuildStuff-Lightning.pdf),
@@ -30,3 +33,4 @@ Three fundamental algorithms for performing a binary join operation exist:
 - https://en.wikipedia.org/wiki/Hash_join
 - https://en.wikipedia.org/wiki/Nested_loop_join
 - https://en.wikipedia.org/wiki/Sort-merge_join
+- https://cgi.cse.unsw.edu.au/~cs9315/21T1/lectures/join-hash/slides.html#s2

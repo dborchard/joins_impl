@@ -1,4 +1,4 @@
-package com.arjunsk.sort_merge.inmemory;
+package com.arjunsk.sort_merge.out_of_core;
 
 import java.io.*;
 import java.nio.file.*;

@@ -8,14 +8,15 @@ Three fundamental algorithms for performing a binary join operation exist:
     - Grace Hash Join [DONE]
     - Naive Main Memory Hash Join
     - [External Hash Table](https://www.youtube.com/watch?v=ev3UHuDIiDg&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=6) [DONE]
-- nested loop join
 - sort-merge join
     - [Double Buffering](https://www.youtube.com/watch?v=qdeBmEnv_bI&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=2)
     - [External Merge Sort](https://www.youtube.com/watch?v=hRgrnQU-uJ4&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=4)
+    - [Sort vs Hash: Pros and Cons](https://www.youtube.com/watch?v=5TvveH6bgEo&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=11)
 - symmetric hash join (streaming) [DONE]
   - Join Schema which [doesn't have Pipeline Breakers](https://www.youtube.com/watch?v=jveohy_qhHU&list=PLzzVuDSjP25QY8TJcPLh7WqP81qYk9A0m&index=9)
   - Send output as soon as you get input rather than waiting for the whole join to end.
   - There is a Out-of-core Symmetric Hash Join (X-Join Paper). Not used in practical systems.
+- nested loop join
   
 ### Core Ideas
 
@@ -24,6 +25,9 @@ Three fundamental algorithms for performing a binary join operation exist:
 - [Sampling for Partitioning/Sorting](https://www.youtube.com/watch?v=zDj72vqypks&list=PLzzVuDSjP25QY8TJcPLh7WqP81qYk9A0m&index=7):
   Used in parallel merge join, IVF Flat using
   K-means, [Distributed KD Tree](https://medium.com/sys-base/spatial-partitioned-rdd-using-kd-tree-in-spark-102e0b53564b)
+- [Hashing vs Sorting](https://www.youtube.com/watch?v=Pm58kIR4EQE&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=12)
+  - Hashing is Divide, Hash, and Manage
+  - Sorting is Divide, Sort, and Merge
 
 ### Good Reference Videos
 

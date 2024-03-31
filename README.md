@@ -8,7 +8,7 @@ Three fundamental algorithms for performing a binary join operation exist:
     - Grace Hash Join [DONE]
     - Naive Main Memory Hash Join
     - [External Hash Table](https://www.youtube.com/watch?v=ev3UHuDIiDg&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=6) [DONE]
-- sort-merge join
+- sort-merge join [DONE]
     - [Double Buffering](https://www.youtube.com/watch?v=qdeBmEnv_bI&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=2)
     - [External Merge Sort](https://www.youtube.com/watch?v=hRgrnQU-uJ4&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=4)
     - [Sort vs Hash: Pros and Cons](https://www.youtube.com/watch?v=5TvveH6bgEo&list=PLzzVuDSjP25Qpsaf7GxFDBEWwvQKCkCVl&index=11)

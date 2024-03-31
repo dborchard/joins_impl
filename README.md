@@ -38,3 +38,14 @@ Three fundamental algorithms for performing a binary join operation exist:
 - https://en.wikipedia.org/wiki/Nested_loop_join
 - https://en.wikipedia.org/wiki/Sort-merge_join
 - https://cgi.cse.unsw.edu.au/~cs9315/21T1/lectures/join-hash/slides.html#s2
+- https://pages.cs.wisc.edu/~travitch/notes/cs764-notes-midterm1.pdf
+- [Loop Join Animation](https://notes.bencuan.me/cs186/05-iterators-and-joins/)
+- https://faculty.cc.gatech.edu/~jarulraj/courses/4420-f20/slides/20-joins.pdf
+- https://courses.cs.washington.edu/courses/cse444/10au/lectures/lecture20.pdf
+- https://pages.cs.wisc.edu/~yxy/cs764-f21/slides/L2.pdf
+
+
+### Need to revisit
+- https://clickhouse.com/blog/clickhouse-fully-supports-joins-hash-joins-part2
+- https://www.cockroachlabs.com/blog/vectorized-hash-joiner/
+- https://www.cockroachlabs.com/blog/vectorizing-the-merge-joiner-in-cockroachdb/

@@ -41,6 +41,14 @@ public class ParallelMergeSort {
         List<Integer> collectedSample = sampledData.collect();
         List<Integer> mutableSample = new ArrayList<>(collectedSample);
         Collections.sort(mutableSample);
+        if (mutableSample.size() == 0){
+            // this is a corner case for this sample code.
+            // if sample return nil, then add a new sample set.
+            mutableSample.add(Integer.MIN_VALUE);
+            mutableSample.add(3);
+            mutableSample.add(6);
+            mutableSample.add(Integer.MAX_VALUE);
+        }
 
 
         // Step 2 (Pass 0): Partition the RDD based on the defined ranges
@@ -79,7 +87,7 @@ public class ParallelMergeSort {
         // This could involve collecting sorted partitions to a single machine or performing a distributed merge
         List<Tuple2<Integer, Integer>> sortedData = partitionedAndSorted.collect();
         System.out.println("Size: "+sortedData.size());
-        sortedData.forEach(tuple -> System.out.println("Partition: " + tuple._1 + ", Value: " + tuple._2));
+        sortedData.forEach(tuple -> System.out.println(" Value: " + tuple._2));
 
         sc.close();
     }
